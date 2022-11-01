@@ -21,7 +21,7 @@ When you want people to come over, use ComeOver!
 - **Story:** Users will be able to use this app to help plan events. This includes creating an event and managing an event's invitation list.
 - **Market:** This application can be used by any individual interested in planning events.
 - **Habit:** This app can be used often according to how often someone would need to plan events.
-- **Scope:** First, this app will start with allowing personal users to see other users events, and then could evolve into an event planning application for companies on a larger scale.
+- **Scope:** First, this app will start with allowing personal users to plan events, and then could evolve into an app that enables social networking (sending invations to other users, RSVPING for events, etc.)
 
 ## Product Spec
 
