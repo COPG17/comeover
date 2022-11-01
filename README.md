@@ -18,8 +18,8 @@ When you want people to come over, use ComeOver!
 ### App Evaluation
 - **Category:** Event Planning / Social Networking
 - **Mobile:** App is primarily developed for mobile but may also be implemented to be a web based version.
-- **Story:** Users will be able to use this app to help plan events. This includes inviting guests, keeping track of your guest list for certain events, as well as rsvping for events giving the user different options to rsvp for an event.
-- **Market:** This application can be used by any individual. In order to preserve privacy "friends" can only be added manually. 
+- **Story:** Users will be able to use this app to help plan events. This includes creating an event and managing an event's invitation list.
+- **Market:** This application can be used by any individual interested in planning events.
 - **Habit:** This app can be used often according to how often someone would need to plan events.
 - **Scope:** First, this app will start with allowing personal users to see other users events, and then could evolve into an event planning application for companies on a larger scale.
 
