@@ -12,6 +12,7 @@ Original App Design Project
 ## Overview
 ### Description
 ComeOver is an event planning app for IOS devices. ComeOver allows users to view and create events they are planning. Additionally, ComeOver allows users to view and add people to an event's invitation list. 
+
 When you want people to come over, use ComeOver!
 
 ### App Evaluation
