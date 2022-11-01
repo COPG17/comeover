@@ -85,7 +85,7 @@ When you want people to come over, use ComeOver!
 * My Events -> Jump to login screen (when "logout" button is pressed) 
 
 ## Wireframes
-<img src="https://i.imgur.com/OMsjBzK.png" width=600>
+<img src="https://i.imgur.com/wMvwAuh.png" width=600>
 
 ## Schema 
 [This section will be completed in Unit 9]
