@@ -72,9 +72,7 @@ When you want people to come over, use ComeOver!
 **Tab Navigation** (Tab to Screen)
 
 * My events - displays events that you created
-* Add event - screen that allows you to create a new event
-* Your friends - displays friends that you have added on the app and allows you to add other users
-* Your invitations - displays invitations to events that you have been invited to by friends and allows you to respond to invitations
+* Add Event - screen that allows you to create a new event
 
 **Flow Navigation** (Screen to Screen)
 
