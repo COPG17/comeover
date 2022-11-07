@@ -131,7 +131,6 @@ When you want people to come over, use ComeOver!
             else{
                 print("Error saving invite")
             }
-        }
         
    ```
 * Invitation Screen
