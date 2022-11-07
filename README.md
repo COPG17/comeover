@@ -118,10 +118,9 @@ When you want people to come over, use ComeOver!
    * (Update/PUT) Update description for event
    * (Create/POST) Add person to an events invitation list
    ```
-   func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         let invitation = PFObject(className: "Invitations")
         invitations["text"] = text
-        invitations["post"] = selectedPost
+        invitations["post"] = selectedEvent
         invitations["author"] = PFUser.current()!
         selectedEvent.add(invitation, forKey: "invitations")
 
@@ -134,13 +133,6 @@ When you want people to come over, use ComeOver!
             }
         }
         
-        tableView.reloadData()
-        
-        invitationBar.inputTextView.text = nil
-        showsInvitationBar = false
-        becomeFirstResponder()
-        invitationBar.inputTextView.resignFirstResponder()
-    }
    ```
 * Invitation Screen
    * (Read/GET) Query of an events invitation
