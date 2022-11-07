@@ -97,7 +97,33 @@ When you want people to come over, use ComeOver!
 | eventInvitee | Object | Name of person invited to event and the Id of the event |
 ### Networking
 * Login Screen / Signup Screen
-   * 
+  Signup
+  ```
+   let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        user.signUpInBackground {(success, error) in
+           if success {
+               self.performSegue(withIdentifier: "loginSegue", sender: nil)
+           } else {
+               print("Error: \(error?.localizedDescription ?? "Error")")
+           }
+        }
+  ``` 
+  Login
+  ```
+    let username = usernameField.text!
+           let password = passwordField.text!
+
+           PFUser.logInWithUsername(inBackground: username, password: password)
+               { (user, error) in
+               if user != nil {
+                   self.performSegue(withIdentifier: "loginSegue", sender: nil)
+               } else {
+                   print("Error: \(error?.localizedDescription ?? "Error")")
+               }
+           }
+  ``` 
 * My Events Screen
    * (Read/GET) Query all events posted by user
    ```
