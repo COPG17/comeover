@@ -38,7 +38,6 @@ When you want people to come over, use ComeOver!
 * User can view a list of people they want to invite to the event
 * User can view an event they created
 * User can add people to an events invitation list
-* User can view an event they created
 
 **Optional Nice-to-have Stories**
 
