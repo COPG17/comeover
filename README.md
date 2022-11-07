@@ -94,6 +94,7 @@ When you want people to come over, use ComeOver!
 | author | Pointer to user | Author of event post |
 | image | File | Image that user posts tied to the event |
 | eventDescription | String | Caption detailing information for the event post |
+| eventInvitee | Object | Name of person invited to event and the Id of the event |
 ### Networking
 * Login Screen / Signup Screen
    * 
