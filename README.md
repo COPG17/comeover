@@ -114,6 +114,25 @@ When you want people to come over, use ComeOver!
    * (Update/PUT) Update any existing events from logged in user
 * Create Event Screen
    * (Create/POST) Create a new event for logged in user
+   ```
+        let event = PFObject(className: "events")
+        
+        event["description"] = commentField.text!
+        event["author"] = PFUser.current()!
+        
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
+        
+        event["image"] = file
+        
+        event.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Saved!")
+            } else {
+                print("Error!")
+            }
+    ```     
 * Individual Event Screen
    * (Update/PUT) Update description for event
    * (Create/POST) Add person to an events invitation list
