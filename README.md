@@ -148,6 +148,16 @@ When you want people to come over, use ComeOver!
       }
     ```
    * (Update/PUT) Update any existing events from logged in user
+   var query = PFQuery(className:"events")
+   query.getObjectInBackgroundWithId(selectedEventID) {
+     (player: PFObject?, error: NSError?) -> Void in
+     if error != nil {
+       print(error)
+     } else if let event = event {
+       event["description"] = descriptionField.text!
+       player.saveInBackground()
+     }
+   }
 * Create Event Screen
    * (Create/POST) Create a new event for logged in user
    ```
