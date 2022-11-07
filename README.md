@@ -117,7 +117,7 @@ When you want people to come over, use ComeOver!
    ```
         let event = PFObject(className: "events")
         
-        event["description"] = commentField.text!
+        event["description"] = descriptionField.text!
         event["author"] = PFUser.current()!
         
         let imageData = imageView.image!.pngData()
