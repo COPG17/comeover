@@ -117,6 +117,31 @@ When you want people to come over, use ComeOver!
 * Individual Event Screen
    * (Read/GET) Query of individual event
    * (Update/PUT) Update description for event
-   * (Create/POST) Invite friends/other users to event
+   * (Create/POST) Add person to an events invitation list
+   ```
+   func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
+        let invitations = PFObject(className: "Invitations")
+        invitations["text"] = text
+        invitations["post"] = selectedPost
+        invitations["author"] = PFUser.current()!
+        selectedPost.add(comment, forKey: "comments")
+
+        selectedEvent.saveInBackground{(success, error) in
+            if success {
+                print("Invite Saved")
+            }
+            else{
+                print("Error saving invite")
+            }
+        }
+        
+        tableView.reloadData()
+        
+        commentBar.inputTextView.text = nil
+        showsCommentBar = false
+        becomeFirstResponder()
+        commentBar.inputTextView.resignFirstResponder()
+    }
+   ```
 * Invitation Screen
    * (Read/GET) Query of invitations received
