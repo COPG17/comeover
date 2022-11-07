@@ -145,13 +145,12 @@ When you want people to come over, use ComeOver!
 * Invitation Screen
    * (Read/GET) Query of an events invitation
    ```
-   if indexPath.row <= invitations.count {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "InvitationCell") as! InvitationCell
-            let invitation = invitations[indexPath.row - 1]
-            cell.invitationLabel.text = invitation["text"] as? String
-            return cell
-        } else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "AddInvitationCell")!
-            return cell
-        }
-    ```
+   let query = PFQuery(className: "invitations")
+       query.includeKeys(["author", "eventInvitee"])
+       query.findObjectsInBackground{(Invitations, error) in
+            if invitations != nil {
+               print("Successfully retrieved \(invitations.count) invitations.")
+            } else if let error = error {
+              print(error.localizedDescription)
+   }
+   ```
