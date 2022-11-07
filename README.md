@@ -137,6 +137,16 @@ When you want people to come over, use ComeOver!
    }
    ```
    * (Delete) Delete existing event
+    ```
+      let query = PFQuery(className: "events")
+      query.whereKey("eventID", equalTo: selectedEventID)
+      query.findObjectsInBackgroundWithBlock {
+      (objects: [AnyObject]?, error: NSError?) -> Void in
+        for event in events {
+            event.deleteEventually()
+        }
+      }
+    ```
    * (Update/PUT) Update any existing events from logged in user
 * Create Event Screen
    * (Create/POST) Create a new event for logged in user
