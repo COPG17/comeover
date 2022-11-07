@@ -115,7 +115,6 @@ When you want people to come over, use ComeOver!
 * Create Event Screen
    * (Create/POST) Create a new event for logged in user
 * Individual Event Screen
-   * (Read/GET) Query of individual event
    * (Update/PUT) Update description for event
    * (Create/POST) Add person to an events invitation list
    ```
@@ -147,7 +146,7 @@ When you want people to come over, use ComeOver!
    * (Read/GET) Query of an events invitation
    ```
    if indexPath.row <= invitations.count {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "InvitationCell") as! InvitationCell
             let invitation = invitations[indexPath.row - 1]
             cell.invitationLabel.text = invitation["text"] as? String
             return cell
