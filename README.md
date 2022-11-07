@@ -88,10 +88,35 @@ When you want people to come over, use ComeOver!
 <img src="https://i.imgur.com/wMvwAuh.png" width=600>
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+| Property | Type | Description |
+| --- | --- | --- |
+| eventId | String | Id for user event post |
+| author | Pointer to user | Author of event post |
+| image | File | Image that user posts tied to the event |
+| eventDescription | String | Caption detailing information for the event post |
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+* Login Screen / Signup Screen
+   * 
+* My Events Screen
+   * (Read/GET) Query all events posted by user
+   ```
+   let query = PFQuery(className: "events")
+       query.includeKeys(["author", "eventDescription"])
+       query.findObjectsInBackground{(Events, error) in
+            if events != nil {
+               print("Successfully retrieved \(events.count) posts.")
+            } else if let error = error {
+              print(error.localizedDescription)
+   }
+   ```
+   * (Delete) Delete existing event
+   * (Update/PUT) Update any existing events from logged in user
+* Create Event Screen
+   * (Create/POST) Create a new event for logged in user
+* Individual Event Screen
+   * (Read/GET) Query of individual event
+   * (Update/PUT) Update description for event
+   * (Create/POST) Invite friends/other users to event
+* Invitation Screen
+   * (Read/GET) Query of invitations received
