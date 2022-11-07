@@ -120,11 +120,11 @@ When you want people to come over, use ComeOver!
    * (Create/POST) Add person to an events invitation list
    ```
    func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
-        let invitations = PFObject(className: "Invitations")
+        let invitation = PFObject(className: "Invitations")
         invitations["text"] = text
         invitations["post"] = selectedPost
         invitations["author"] = PFUser.current()!
-        selectedPost.add(comment, forKey: "comments")
+        selectedEvent.add(invitation, forKey: "invitations")
 
         selectedEvent.saveInBackground{(success, error) in
             if success {
@@ -137,10 +137,10 @@ When you want people to come over, use ComeOver!
         
         tableView.reloadData()
         
-        commentBar.inputTextView.text = nil
-        showsCommentBar = false
+        invitationBar.inputTextView.text = nil
+        showsInvitationBar = false
         becomeFirstResponder()
-        commentBar.inputTextView.resignFirstResponder()
+        invitationBar.inputTextView.resignFirstResponder()
     }
    ```
 * Invitation Screen
