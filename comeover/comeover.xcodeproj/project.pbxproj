@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45B61B97D87BC4811536351D /* Pods_comeover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D7E397A6A929B213C2A19C /* Pods_comeover.framework */; };
+		C1C441A64DAFAE14555FD722 /* Pods_comeoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378787F72921A9C308053308 /* Pods_comeoverTests.framework */; };
+		D768973ADB85D0DADA8BE4F5 /* Pods_comeover_comeoverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6926C236D97ADC24174D9439 /* Pods_comeover_comeoverUITests.framework */; };
 		FFBAA755291EDC4500309441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA754291EDC4500309441 /* AppDelegate.swift */; };
 		FFBAA757291EDC4500309441 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA756291EDC4500309441 /* SceneDelegate.swift */; };
 		FFBAA759291EDC4500309441 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA758291EDC4500309441 /* ViewController.swift */; };
@@ -36,6 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1013465D42F10663C0638519 /* Pods-comeover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover.release.xcconfig"; path = "Target Support Files/Pods-comeover/Pods-comeover.release.xcconfig"; sourceTree = "<group>"; };
+		378787F72921A9C308053308 /* Pods_comeoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5526AEE83D30329E76CE4CF0 /* Pods-comeover-comeoverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover-comeoverUITests.release.xcconfig"; path = "Target Support Files/Pods-comeover-comeoverUITests/Pods-comeover-comeoverUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62D7E397A6A929B213C2A19C /* Pods_comeover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6926C236D97ADC24174D9439 /* Pods_comeover_comeoverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeover_comeoverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A38D76E1D4A4E8D36188AF /* Pods-comeoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeoverTests.release.xcconfig"; path = "Target Support Files/Pods-comeoverTests/Pods-comeoverTests.release.xcconfig"; sourceTree = "<group>"; };
+		D103A9C36401F4A9DF8A84CE /* Pods-comeover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover.debug.xcconfig"; path = "Target Support Files/Pods-comeover/Pods-comeover.debug.xcconfig"; sourceTree = "<group>"; };
+		DF65333C973A377CDF52014B /* Pods-comeover-comeoverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover-comeoverUITests.debug.xcconfig"; path = "Target Support Files/Pods-comeover-comeoverUITests/Pods-comeover-comeoverUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF59511ACCDE43F77187317B /* Pods-comeoverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeoverTests.debug.xcconfig"; path = "Target Support Files/Pods-comeoverTests/Pods-comeoverTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFBAA751291EDC4500309441 /* comeover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = comeover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBAA754291EDC4500309441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFBAA756291EDC4500309441 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B61B97D87BC4811536351D /* Pods_comeover.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C441A64DAFAE14555FD722 /* Pods_comeoverTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D768973ADB85D0DADA8BE4F5 /* Pods_comeover_comeoverUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06E11B0D7FD49092AD6A4F03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62D7E397A6A929B213C2A19C /* Pods_comeover.framework */,
+				6926C236D97ADC24174D9439 /* Pods_comeover_comeoverUITests.framework */,
+				378787F72921A9C308053308 /* Pods_comeoverTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5017201ED221459B09F1F90F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D103A9C36401F4A9DF8A84CE /* Pods-comeover.debug.xcconfig */,
+				1013465D42F10663C0638519 /* Pods-comeover.release.xcconfig */,
+				DF65333C973A377CDF52014B /* Pods-comeover-comeoverUITests.debug.xcconfig */,
+				5526AEE83D30329E76CE4CF0 /* Pods-comeover-comeoverUITests.release.xcconfig */,
+				FF59511ACCDE43F77187317B /* Pods-comeoverTests.debug.xcconfig */,
+				90A38D76E1D4A4E8D36188AF /* Pods-comeoverTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FFBAA748291EDC4500309441 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				FFBAA76A291EDC4700309441 /* comeoverTests */,
 				FFBAA774291EDC4700309441 /* comeoverUITests */,
 				FFBAA752291EDC4500309441 /* Products */,
+				5017201ED221459B09F1F90F /* Pods */,
+				06E11B0D7FD49092AD6A4F03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFBAA77B291EDC4700309441 /* Build configuration list for PBXNativeTarget "comeover" */;
 			buildPhases = (
+				8FE4069891CF3F3D79F09485 /* [CP] Check Pods Manifest.lock */,
 				FFBAA74D291EDC4500309441 /* Sources */,
 				FFBAA74E291EDC4500309441 /* Frameworks */,
 				FFBAA74F291EDC4500309441 /* Resources */,
+				F4AB7D3E9C6185B675AE1B2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFBAA77E291EDC4700309441 /* Build configuration list for PBXNativeTarget "comeoverTests" */;
 			buildPhases = (
+				36A2DD54D28F2ACADAB04EC5 /* [CP] Check Pods Manifest.lock */,
 				FFBAA763291EDC4700309441 /* Sources */,
 				FFBAA764291EDC4700309441 /* Frameworks */,
 				FFBAA765291EDC4700309441 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFBAA781291EDC4700309441 /* Build configuration list for PBXNativeTarget "comeoverUITests" */;
 			buildPhases = (
+				E61840B7535E8B4DD6623A96 /* [CP] Check Pods Manifest.lock */,
 				FFBAA76D291EDC4700309441 /* Sources */,
 				FFBAA76E291EDC4700309441 /* Frameworks */,
 				FFBAA76F291EDC4700309441 /* Resources */,
+				34EAB9EFAD1F03442ED9FFC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34EAB9EFAD1F03442ED9FFC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-comeover-comeoverUITests/Pods-comeover-comeoverUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-comeover-comeoverUITests/Pods-comeover-comeoverUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-comeover-comeoverUITests/Pods-comeover-comeoverUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36A2DD54D28F2ACADAB04EC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-comeoverTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE4069891CF3F3D79F09485 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-comeover-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E61840B7535E8B4DD6623A96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-comeover-comeoverUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4AB7D3E9C6185B675AE1B2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-comeover/Pods-comeover-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-comeover/Pods-comeover-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-comeover/Pods-comeover-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFBAA74D291EDC4500309441 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		FFBAA77C291EDC4700309441 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D103A9C36401F4A9DF8A84CE /* Pods-comeover.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +609,7 @@
 		};
 		FFBAA77D291EDC4700309441 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1013465D42F10663C0638519 /* Pods-comeover.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +637,7 @@
 		};
 		FFBAA77F291EDC4700309441 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF59511ACCDE43F77187317B /* Pods-comeoverTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +657,7 @@
 		};
 		FFBAA780291EDC4700309441 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A38D76E1D4A4E8D36188AF /* Pods-comeoverTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +677,7 @@
 		};
 		FFBAA782291EDC4700309441 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF65333C973A377CDF52014B /* Pods-comeover-comeoverUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +695,7 @@
 		};
 		FFBAA783291EDC4700309441 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5526AEE83D30329E76CE4CF0 /* Pods-comeover-comeoverUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
