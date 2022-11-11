@@ -12,13 +12,14 @@
 		D768973ADB85D0DADA8BE4F5 /* Pods_comeover_comeoverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6926C236D97ADC24174D9439 /* Pods_comeover_comeoverUITests.framework */; };
 		FFBAA755291EDC4500309441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA754291EDC4500309441 /* AppDelegate.swift */; };
 		FFBAA757291EDC4500309441 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA756291EDC4500309441 /* SceneDelegate.swift */; };
-		FFBAA759291EDC4500309441 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA758291EDC4500309441 /* ViewController.swift */; };
 		FFBAA75C291EDC4500309441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA75A291EDC4500309441 /* Main.storyboard */; };
 		FFBAA75E291EDC4700309441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA75D291EDC4700309441 /* Assets.xcassets */; };
 		FFBAA761291EDC4700309441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA75F291EDC4700309441 /* LaunchScreen.storyboard */; };
 		FFBAA76C291EDC4700309441 /* comeoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA76B291EDC4700309441 /* comeoverTests.swift */; };
 		FFBAA776291EDC4700309441 /* comeoverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA775291EDC4700309441 /* comeoverUITests.swift */; };
 		FFBAA778291EDC4700309441 /* comeoverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA777291EDC4700309441 /* comeoverUITestsLaunchTests.swift */; };
+		FFBAA785291EE46000309441 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA784291EE46000309441 /* LoginViewController.swift */; };
+		FFBAA787291EE48700309441 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA786291EE48700309441 /* EventsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,6 @@
 		FFBAA751291EDC4500309441 /* comeover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = comeover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBAA754291EDC4500309441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFBAA756291EDC4500309441 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FFBAA758291EDC4500309441 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FFBAA75B291EDC4500309441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFBAA75D291EDC4700309441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFBAA760291EDC4700309441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +61,8 @@
 		FFBAA771291EDC4700309441 /* comeoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = comeoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBAA775291EDC4700309441 /* comeoverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comeoverUITests.swift; sourceTree = "<group>"; };
 		FFBAA777291EDC4700309441 /* comeoverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comeoverUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFBAA784291EE46000309441 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FFBAA786291EE48700309441 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,6 @@
 				FF59511ACCDE43F77187317B /* Pods-comeoverTests.debug.xcconfig */,
 				90A38D76E1D4A4E8D36188AF /* Pods-comeoverTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,11 +143,12 @@
 			children = (
 				FFBAA754291EDC4500309441 /* AppDelegate.swift */,
 				FFBAA756291EDC4500309441 /* SceneDelegate.swift */,
-				FFBAA758291EDC4500309441 /* ViewController.swift */,
 				FFBAA75A291EDC4500309441 /* Main.storyboard */,
 				FFBAA75D291EDC4700309441 /* Assets.xcassets */,
 				FFBAA75F291EDC4700309441 /* LaunchScreen.storyboard */,
 				FFBAA762291EDC4700309441 /* Info.plist */,
+				FFBAA784291EE46000309441 /* LoginViewController.swift */,
+				FFBAA786291EE48700309441 /* EventsViewController.swift */,
 			);
 			path = comeover;
 			sourceTree = "<group>";
@@ -407,7 +409,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBAA759291EDC4500309441 /* ViewController.swift in Sources */,
+				FFBAA785291EE46000309441 /* LoginViewController.swift in Sources */,
+				FFBAA787291EE48700309441 /* EventsViewController.swift in Sources */,
 				FFBAA755291EDC4500309441 /* AppDelegate.swift in Sources */,
 				FFBAA757291EDC4500309441 /* SceneDelegate.swift in Sources */,
 			);
