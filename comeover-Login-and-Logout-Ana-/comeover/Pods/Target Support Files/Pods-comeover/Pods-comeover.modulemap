@@ -1,0 +1,6 @@
+framework module Pods_comeover {
+  umbrella header "Pods-comeover-umbrella.h"
+
+  export *
+  module * { export * }
+}
