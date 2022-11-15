@@ -29,15 +29,15 @@ When you want people to come over, use ComeOver!
 
 **Required Must-have Stories**
 
-[x] User can create an account
-[x] User can login 
-[x] User can logout 
-[x] User remains logged in after closing the app 
-[]  User can create events 
-[]  User can view a list of their events 
-[]  User can view a list of people they want to invite to the event
-[]  User can view an event they created
-[]  User can add people to an events invitation list
+- [x] User can create an account
+- [x] User can login 
+- [x] User can logout 
+- [x] User remains logged in after closing the app 
+- [ ]  User can create events 
+- [ ]  User can view a list of their events 
+- [ ]  User can view a list of people they want to invite to the event
+- [ ]  User can view an event they created
+- [ ]  User can add people to an events invitation list
 
 **Optional Nice-to-have Stories**
 
