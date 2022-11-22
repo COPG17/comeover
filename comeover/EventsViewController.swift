@@ -61,15 +61,27 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        //note: sender is the cell/event that was tapped on
+        print("Loading Event Details Screen")
+        //find selected event
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let event = events[indexPath.row]
+        //pass the selected event to the details view controller
+        let detailsViewController = segue.destination as! EventDetailsViewController
+        detailsViewController.event = event
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
+   
     
     
     @IBAction func onLogoutButton(_ sender: Any) {

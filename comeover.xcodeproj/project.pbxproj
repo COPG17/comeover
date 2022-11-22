@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		428B8172292D6CBF002D23AD /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B8171292D6CBF002D23AD /* EventDetailsViewController.swift */; };
 		45B61B97D87BC4811536351D /* Pods_comeover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D7E397A6A929B213C2A19C /* Pods_comeover.framework */; };
 		BFA52945292C353A00DCB729 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA52944292C353A00DCB729 /* EventViewController.swift */; };
 		C1C441A64DAFAE14555FD722 /* Pods_comeoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378787F72921A9C308053308 /* Pods_comeoverTests.framework */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		1013465D42F10663C0638519 /* Pods-comeover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover.release.xcconfig"; path = "Target Support Files/Pods-comeover/Pods-comeover.release.xcconfig"; sourceTree = "<group>"; };
 		378787F72921A9C308053308 /* Pods_comeoverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeoverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		428B8171292D6CBF002D23AD /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		5526AEE83D30329E76CE4CF0 /* Pods-comeover-comeoverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover-comeoverUITests.release.xcconfig"; path = "Target Support Files/Pods-comeover-comeoverUITests/Pods-comeover-comeoverUITests.release.xcconfig"; sourceTree = "<group>"; };
 		62D7E397A6A929B213C2A19C /* Pods_comeover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6926C236D97ADC24174D9439 /* Pods_comeover_comeoverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeover_comeoverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,12 +151,13 @@
 				FFBAA756291EDC4500309441 /* SceneDelegate.swift */,
 				FFBAA75A291EDC4500309441 /* Main.storyboard */,
 				FF059521292D197B005436A7 /* EventCell.swift */,
-				BFA52944292C353A00DCB729 /* EventViewController.swift */,
 				FFBAA75D291EDC4700309441 /* Assets.xcassets */,
 				FFBAA75F291EDC4700309441 /* LaunchScreen.storyboard */,
 				FFBAA762291EDC4700309441 /* Info.plist */,
+				BFA52944292C353A00DCB729 /* EventViewController.swift */,
 				FFBAA784291EE46000309441 /* LoginViewController.swift */,
 				FFBAA786291EE48700309441 /* EventsViewController.swift */,
+				428B8171292D6CBF002D23AD /* EventDetailsViewController.swift */,
 			);
 			path = comeover;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFA52945292C353A00DCB729 /* EventViewController.swift in Sources */,
+				428B8172292D6CBF002D23AD /* EventDetailsViewController.swift in Sources */,
 				FFBAA785291EE46000309441 /* LoginViewController.swift in Sources */,
 				FFBAA787291EE48700309441 /* EventsViewController.swift in Sources */,
 				FFBAA755291EDC4500309441 /* AppDelegate.swift in Sources */,
