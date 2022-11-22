@@ -23,6 +23,12 @@ When you want people to come over, use ComeOver!
 - **Habit:** This app can be used often according to how often someone would need to plan events.
 - **Scope:** First, this app will start with allowing personal users to plan events, and then could evolve into an app that enables social networking (sending invations to other users, RSVP for events, etc.)
 
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://i.imgur.com/BPuBItE.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
