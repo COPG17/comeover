@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45B61B97D87BC4811536351D /* Pods_comeover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D7E397A6A929B213C2A19C /* Pods_comeover.framework */; };
+		BFA52945292C353A00DCB729 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA52944292C353A00DCB729 /* EventViewController.swift */; };
 		C1C441A64DAFAE14555FD722 /* Pods_comeoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378787F72921A9C308053308 /* Pods_comeoverTests.framework */; };
 		D768973ADB85D0DADA8BE4F5 /* Pods_comeover_comeoverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6926C236D97ADC24174D9439 /* Pods_comeover_comeoverUITests.framework */; };
 		FFBAA755291EDC4500309441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA754291EDC4500309441 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		62D7E397A6A929B213C2A19C /* Pods_comeover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6926C236D97ADC24174D9439 /* Pods_comeover_comeoverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeover_comeoverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A38D76E1D4A4E8D36188AF /* Pods-comeoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeoverTests.release.xcconfig"; path = "Target Support Files/Pods-comeoverTests/Pods-comeoverTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFA52944292C353A00DCB729 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		D103A9C36401F4A9DF8A84CE /* Pods-comeover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover.debug.xcconfig"; path = "Target Support Files/Pods-comeover/Pods-comeover.debug.xcconfig"; sourceTree = "<group>"; };
 		DF65333C973A377CDF52014B /* Pods-comeover-comeoverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover-comeoverUITests.debug.xcconfig"; path = "Target Support Files/Pods-comeover-comeoverUITests/Pods-comeover-comeoverUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF59511ACCDE43F77187317B /* Pods-comeoverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeoverTests.debug.xcconfig"; path = "Target Support Files/Pods-comeoverTests/Pods-comeoverTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				FFBAA754291EDC4500309441 /* AppDelegate.swift */,
 				FFBAA756291EDC4500309441 /* SceneDelegate.swift */,
 				FFBAA75A291EDC4500309441 /* Main.storyboard */,
+				BFA52944292C353A00DCB729 /* EventViewController.swift */,
 				FFBAA75D291EDC4700309441 /* Assets.xcassets */,
 				FFBAA75F291EDC4700309441 /* LaunchScreen.storyboard */,
 				FFBAA762291EDC4700309441 /* Info.plist */,
@@ -409,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA52945292C353A00DCB729 /* EventViewController.swift in Sources */,
 				FFBAA785291EE46000309441 /* LoginViewController.swift in Sources */,
 				FFBAA787291EE48700309441 /* EventsViewController.swift in Sources */,
 				FFBAA755291EDC4500309441 /* AppDelegate.swift in Sources */,
@@ -590,6 +594,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PC226Z6B8K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = comeover/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -618,6 +623,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PC226Z6B8K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = comeover/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
