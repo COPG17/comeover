@@ -31,6 +31,7 @@ Here's a walkthrough of implemented user stories:
 
 ![ezgif-3-d7592e5f9e](https://user-images.githubusercontent.com/66039575/203442218-32f73b73-0a7e-4a43-8b79-84be3fd97264.gif)
 
+![ezgif-3-5e89ad5a28](https://user-images.githubusercontent.com/66039575/203442884-a016dd29-a447-44ce-a3e7-46ff6c62219a.gif)
 
 
 
@@ -44,8 +45,8 @@ Here's a walkthrough of implemented user stories:
 - [x] User can login 
 - [x] User can logout 
 - [x] User remains logged in after closing the app 
-- [ ]  User can create events 
-- [ ]  User can view a list of their events 
+- [x]  User can create events 
+- [x]  User can view a list of their events 
 - [ ]  User can view a list of people they want to invite to the event
 - [ ]  User can view an event they created
 - [ ]  User can add people to an events invitation list
