@@ -48,7 +48,7 @@ Here's a walkthrough of implemented user stories:
 - [x]  User can create events 
 - [x]  User can view a list of their events 
 - [ ]  User can view a list of people they want to invite to the event
-- [ ]  User can view an event they created
+- [x]  User can view an event they created
 - [ ]  User can add people to an events invitation list
 
 **Optional Nice-to-have Stories**
