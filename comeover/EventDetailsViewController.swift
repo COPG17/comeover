@@ -22,7 +22,10 @@ class EventDetailsViewController: UIViewController {
     
     @IBOutlet weak var eventDescriptionLabelDetail: UILabel!
     
-
+    @IBAction func cancelButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
      // DETAIL VIEW CODE!

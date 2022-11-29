@@ -150,7 +150,7 @@
                                             <outlet property="dateLabel" destination="I0I-Bi-4Wd" id="EVj-Ab-7e2"/>
                                             <outlet property="nameLabel" destination="H1t-oT-wSR" id="acp-LW-1qF"/>
                                             <outlet property="photoView" destination="Njd-bh-ITp" id="CtL-S2-4GO"/>
-                                            <segue destination="pJD-Ra-a3n" kind="show" id="Q4s-gW-WkU"/>
+                                            <segue destination="tVZ-Zf-4tx" kind="presentation" identifier="EventDetailsSegue" id="yI6-30-jw5"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -167,7 +167,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Create Event" id="M7r-L8-sgw">
                             <connections>
-                                <segue destination="Qtd-YY-MlK" kind="presentation" id="b1l-v9-nlL"/>
+                                <segue destination="Pry-zd-4fw" kind="presentation" id="EQv-hi-LbV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -179,10 +179,26 @@
             </objects>
             <point key="canvasLocation" x="1550.7246376811595" y="83.705357142857139"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KrO-mo-veS">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="Pry-zd-4fw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rZ2-Wj-jQV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qtd-YY-MlK" kind="relationship" relationship="rootViewController" id="h1T-SV-mZW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8MB-mw-MGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="-316"/>
+        </scene>
         <!--Event Details View Controller-->
         <scene sceneID="4TE-tV-vfr">
             <objects>
-                <viewController id="pJD-Ra-a3n" customClass="EventDetailsViewController" customModule="comeover" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="pJD-Ra-a3n" customClass="EventDetailsViewController" customModule="comeover" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S2B-sl-HyG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,7 +225,13 @@
                         <viewLayoutGuide key="safeArea" id="wJt-zJ-WKk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QXN-ir-8Yt"/>
+                    <navigationItem key="navigationItem" id="QXN-ir-8Yt">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Jja-GW-VvQ">
+                            <connections>
+                                <action selector="cancelButton:" destination="pJD-Ra-a3n" id="RsI-93-Izt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="eventDescriptionLabelDetail" destination="dGS-PL-90m" id="q33-VJ-Wzt"/>
                         <outlet property="eventImageDetail" destination="IwO-Xk-G6p" id="EhP-55-ihm"/>
@@ -218,7 +240,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXc-L0-rbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2626.0869565217395" y="518.30357142857144"/>
+            <point key="canvasLocation" x="3525" y="387"/>
+        </scene>
+        <!--EventDetailsViewController-->
+        <scene sceneID="0fR-4m-03l">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aAF-7P-AwU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController title="EventDetailsViewController" modalPresentationStyle="fullScreen" id="tVZ-Zf-4tx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="95P-It-qTh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pJD-Ra-a3n" kind="relationship" relationship="rootViewController" destinationCreationSelector="EventDetailsSegue" id="3MT-V2-f2a"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2625" y="386"/>
         </scene>
         <!--Event View Controller-->
         <scene sceneID="oBr-F7-edg">
@@ -271,19 +309,17 @@
                                     <action selector="onCreateButton:" destination="Qtd-YY-MlK" eventType="touchUpInside" id="q0e-A5-zW2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfY-VT-jOs">
-                                <rect key="frame" x="19" y="44" width="77" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
-                                <connections>
-                                    <action selector="cancelButton:" destination="Qtd-YY-MlK" eventType="touchUpInside" id="iDL-5w-dtf"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DMg-C8-Qev"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EQm-Ea-9k5">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="RNk-sx-gsa">
+                            <connections>
+                                <action selector="cancelButton:" destination="Qtd-YY-MlK" id="sPR-D4-lY4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="UIImageView" destination="crr-bg-lly" id="1LU-kz-evB"/>
                         <outlet property="datePickerWheel" destination="URb-y1-zII" id="gKQ-wb-UR2"/>
@@ -298,7 +334,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2646" y="-164"/>
+            <point key="canvasLocation" x="3526" y="-316"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dA5-ei-8hy">
