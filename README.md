@@ -49,17 +49,17 @@ Here's a walkthrough of implemented user stories:
 - [x] User remains logged in after closing the app 
 - [x]  User can create events 
 - [x]  User can view a list of their events 
-- [ ]  User can view a list of people they want to invite to the event
+- [x]  User can view a list of people they want to invite to the event
 - [x]  User can view an event they created
-- [ ]  User can add people to an events invitation list
+- [x]  User can add people to an events invitation list
 
 **Optional Nice-to-have Stories**
 
-* User can create a gift wish list for an event
-* User can create a food list for potlucks
-* User can delete their account
-* User can remove an event
-* User can remove people from an events invitation list
+- [ ] User can create a gift wish list for an event
+- [ ] User can create a food list for potlucks
+- [ ] User can delete their account
+- [ ] User can remove an event
+- [ ] User can remove people from an events invitation list
 
 ### 2. Screen Archetypes
 
