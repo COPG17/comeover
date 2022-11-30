@@ -27,6 +27,8 @@ When you want people to come over, use ComeOver!
 
 Here's a walkthrough of implemented user stories:
 
+<img src='https://imgur.com/dXTEC4O.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 <img src='https://i.imgur.com/BPuBItE.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ![ezgif-3-d7592e5f9e](https://user-images.githubusercontent.com/66039575/203442218-32f73b73-0a7e-4a43-8b79-84be3fd97264.gif)
