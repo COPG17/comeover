@@ -23,6 +23,7 @@ class EventViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBAction func cancelButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
   
     
     @IBAction func onCreateButton(_ sender: Any) {
@@ -73,8 +74,20 @@ class EventViewController: UIViewController, UIImagePickerControllerDelegate, UI
         dismiss(animated: true, completion: nil)
     }
     
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Looks for single or multiple taps.
+             let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+            //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+            //tap.cancelsTouchesInView = false
+
+            view.addGestureRecognizer(tap)
         eventDescriptionField.becomeFirstResponder()
 
         

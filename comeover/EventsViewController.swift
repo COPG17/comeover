@@ -50,7 +50,6 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let query = PFQuery(className:"Events")
         query.whereKey("eventHost", equalTo: PFUser.current())
-        query.limit = 20
         
         query.findObjectsInBackground{(events, error) in
             if events != nil {

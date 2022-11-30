@@ -8,7 +8,7 @@ target 'comeover' do
   # Pods for comeover
   pod 'Parse'
   pod 'AlamofireImage'
-
+  pod 'MessageInputBar'
   target 'comeoverTests' do
     inherit! :search_paths
     # Pods for testing

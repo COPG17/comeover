@@ -22,14 +22,31 @@ class EventDetailsViewController: UIViewController {
     
     @IBOutlet weak var eventDescriptionLabelDetail: UILabel!
     
-    @IBAction func cancelButton(_ sender: Any) {
+   
+    @IBAction func backButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GuestListSegue"{
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        //note: sender is the cell/event that was tapped on
+        print(event)
+        print("Loading Event Guest List Screen")
+        //pass the selected event to the details view controller
+        let nav = segue.destination as! UINavigationController
+        let svc = nav.topViewController as! GuestViewController
+        svc.event = event
+        
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
      // DETAIL VIEW CODE!
-        print(event["eventName"])
     //print(event["eventName"])
        //POPULATING THE TEXT FIELDS
         eventNameLabelDetail.text = event["eventName"] as! String

@@ -23,6 +23,8 @@
 		FFBAA778291EDC4700309441 /* comeoverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA777291EDC4700309441 /* comeoverUITestsLaunchTests.swift */; };
 		FFBAA785291EE46000309441 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA784291EE46000309441 /* LoginViewController.swift */; };
 		FFBAA787291EE48700309441 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA786291EE48700309441 /* EventsViewController.swift */; };
+		FFECA2A82936AB8D008FC3AF /* GuestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFECA2A72936AB8D008FC3AF /* GuestCell.swift */; };
+		FFECA2AA2936AD5E008FC3AF /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFECA2A92936AD5E008FC3AF /* GuestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		FFBAA777291EDC4700309441 /* comeoverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comeoverUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FFBAA784291EE46000309441 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFBAA786291EE48700309441 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		FFECA2A72936AB8D008FC3AF /* GuestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestCell.swift; sourceTree = "<group>"; };
+		FFECA2A92936AD5E008FC3AF /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				FFBAA754291EDC4500309441 /* AppDelegate.swift */,
 				FFBAA756291EDC4500309441 /* SceneDelegate.swift */,
 				FFBAA75A291EDC4500309441 /* Main.storyboard */,
+				FFECA2A92936AD5E008FC3AF /* GuestViewController.swift */,
 				FF059521292D197B005436A7 /* EventCell.swift */,
 				FFBAA75D291EDC4700309441 /* Assets.xcassets */,
 				FFBAA75F291EDC4700309441 /* LaunchScreen.storyboard */,
@@ -158,6 +163,7 @@
 				FFBAA784291EE46000309441 /* LoginViewController.swift */,
 				FFBAA786291EE48700309441 /* EventsViewController.swift */,
 				428B8171292D6CBF002D23AD /* EventDetailsViewController.swift */,
+				FFECA2A72936AB8D008FC3AF /* GuestCell.swift */,
 			);
 			path = comeover;
 			sourceTree = "<group>";
@@ -422,6 +428,8 @@
 				428B8172292D6CBF002D23AD /* EventDetailsViewController.swift in Sources */,
 				FFBAA785291EE46000309441 /* LoginViewController.swift in Sources */,
 				FFBAA787291EE48700309441 /* EventsViewController.swift in Sources */,
+				FFECA2AA2936AD5E008FC3AF /* GuestViewController.swift in Sources */,
+				FFECA2A82936AB8D008FC3AF /* GuestCell.swift in Sources */,
 				FFBAA755291EDC4500309441 /* AppDelegate.swift in Sources */,
 				FF059522292D197B005436A7 /* EventCell.swift in Sources */,
 				FFBAA757291EDC4500309441 /* SceneDelegate.swift in Sources */,
