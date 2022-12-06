@@ -42,12 +42,6 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.bounds
-        gradientLayer.colors = [UIColor.systemBlue.cgColor, UIColor.white.cgColor]
-        
-        view.layer.insertSublayer(gradientLayer, at: 0)
         // Do any additional setup after loading the view.
     }
     

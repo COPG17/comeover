@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		428B8172292D6CBF002D23AD /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B8171292D6CBF002D23AD /* EventDetailsViewController.swift */; };
 		45B61B97D87BC4811536351D /* Pods_comeover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D7E397A6A929B213C2A19C /* Pods_comeover.framework */; };
+		BF3408F6293FFCBF001169EF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3408F5293FFCBF001169EF /* GradientView.swift */; };
 		BFA52945292C353A00DCB729 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA52944292C353A00DCB729 /* EventViewController.swift */; };
 		C1C441A64DAFAE14555FD722 /* Pods_comeoverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378787F72921A9C308053308 /* Pods_comeoverTests.framework */; };
 		D768973ADB85D0DADA8BE4F5 /* Pods_comeover_comeoverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6926C236D97ADC24174D9439 /* Pods_comeover_comeoverUITests.framework */; };
@@ -52,6 +53,7 @@
 		62D7E397A6A929B213C2A19C /* Pods_comeover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6926C236D97ADC24174D9439 /* Pods_comeover_comeoverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_comeover_comeoverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A38D76E1D4A4E8D36188AF /* Pods-comeoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeoverTests.release.xcconfig"; path = "Target Support Files/Pods-comeoverTests/Pods-comeoverTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF3408F5293FFCBF001169EF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		BFA52944292C353A00DCB729 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		D103A9C36401F4A9DF8A84CE /* Pods-comeover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover.debug.xcconfig"; path = "Target Support Files/Pods-comeover/Pods-comeover.debug.xcconfig"; sourceTree = "<group>"; };
 		DF65333C973A377CDF52014B /* Pods-comeover-comeoverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-comeover-comeoverUITests.debug.xcconfig"; path = "Target Support Files/Pods-comeover-comeoverUITests/Pods-comeover-comeoverUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				FFBAA754291EDC4500309441 /* AppDelegate.swift */,
 				FFBAA756291EDC4500309441 /* SceneDelegate.swift */,
 				FFBAA75A291EDC4500309441 /* Main.storyboard */,
+				BF3408F5293FFCBF001169EF /* GradientView.swift */,
 				FFECA2A92936AD5E008FC3AF /* GuestViewController.swift */,
 				FF059521292D197B005436A7 /* EventCell.swift */,
 				FFBAA75D291EDC4700309441 /* Assets.xcassets */,
@@ -426,6 +429,7 @@
 			files = (
 				BFA52945292C353A00DCB729 /* EventViewController.swift in Sources */,
 				428B8172292D6CBF002D23AD /* EventDetailsViewController.swift in Sources */,
+				BF3408F6293FFCBF001169EF /* GradientView.swift in Sources */,
 				FFBAA785291EE46000309441 /* LoginViewController.swift in Sources */,
 				FFBAA787291EE48700309441 /* EventsViewController.swift in Sources */,
 				FFECA2AA2936AD5E008FC3AF /* GuestViewController.swift in Sources */,
