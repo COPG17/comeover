@@ -89,6 +89,12 @@ class EventViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
             view.addGestureRecognizer(tap)
         eventDescriptionField.becomeFirstResponder()
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        gradientLayer.colors = [UIColor.white.cgColor, UIColor.systemBlue.cgColor]
+        
+        view.layer.insertSublayer(gradientLayer, at: 0)
 
         
         

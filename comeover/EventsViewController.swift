@@ -41,6 +41,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         tableView.delegate = self
         tableView.dataSource = self
+        
 
         // Do any additional setup after loading the view.
     }

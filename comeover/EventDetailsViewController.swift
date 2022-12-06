@@ -75,6 +75,12 @@ class EventDetailsViewController: UIViewController {
         let url = URL(string: urlString)!
         eventImageDetail.af.setImage(withURL: url)
         // Do any additional setup after loading the view.
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        gradientLayer.colors = [UIColor.systemBlue.cgColor, UIColor.white.cgColor]
+        
+        view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
 
