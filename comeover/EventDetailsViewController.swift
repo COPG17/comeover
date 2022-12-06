@@ -22,6 +22,14 @@ class EventDetailsViewController: UIViewController {
     
     @IBOutlet weak var eventDescriptionLabelDetail: UILabel!
     
+    @IBOutlet weak var eventTimeLableDetail: UILabel!
+    
+    
+    
+    
+    
+    
+    
    
     @IBAction func backButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -51,6 +59,16 @@ class EventDetailsViewController: UIViewController {
        //POPULATING THE TEXT FIELDS
         eventNameLabelDetail.text = event["eventName"] as! String
         eventDescriptionLabelDetail.text = event["eventDescription"] as! String
+       
+        
+        //populating the time feild
+        let date = event["eventDate"] as! Date
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm E, d MMM y"
+        
+        
+        eventTimeLableDetail.text = formatter.string(from: date) as! String
+        
         //POPULATING THE IMAGE
         let imageFile = event["eventImage"] as! PFFileObject
         let urlString = imageFile.url!
