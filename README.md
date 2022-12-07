@@ -27,6 +27,8 @@ When you want people to come over, use ComeOver!
 
 Here's a walkthrough of implemented user stories:
 
+<img src='https://imgur.com/f7crj1a.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 <img src='https://imgur.com/dXTEC4O.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='https://i.imgur.com/BPuBItE.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
@@ -58,8 +60,8 @@ Here's a walkthrough of implemented user stories:
 - [ ] User can create a gift wish list for an event
 - [ ] User can create a food list for potlucks
 - [ ] User can delete their account
-- [ ] User can remove an event
-- [ ] User can remove people from an events invitation list
+- [x] User can remove an event
+- [x] User can remove people from an events invitation list
 
 ### 2. Screen Archetypes
 
