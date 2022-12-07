@@ -48,9 +48,8 @@ class EventViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 print("error!")
             }
         }
-        
-        
     }
+    
     
     @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()

@@ -85,7 +85,31 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            let event = events[indexPath.row]
+            let id = event.objectId
+            event.deleteInBackground()
+            let query = PFQuery(className: "Guests")
+            query.whereKey("eventId", equalTo: id)
+            query.findObjectsInBackground {(objects, error) in
+                if error == nil,
+                            let objects = objects {
+                            for object in objects {
+                                object.deleteInBackground()
+                            }
+                        }
+            }
+            self.events.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
+        }
+    }
     
     @IBAction func onLogoutButton(_ sender: Any) {
         

@@ -37,8 +37,8 @@ class GuestViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 let eventId = eventHost.objectId
                 let query = PFQuery(className: "Guests")
                 query.whereKey("eventId", equalTo: eventId)
-                query.findObjectsInBackground {(posts, error) in
-                    if posts != nil { self.invitations = posts!
+                query.findObjectsInBackground {(invitations, error) in
+                    if invitations != nil { self.invitations = invitations!
                         self.tableView.reloadData()
                   }
                 }
@@ -50,6 +50,23 @@ class GuestViewController: UIViewController, UITableViewDelegate, UITableViewDat
         showsCommentBar = false
         becomeFirstResponder()
         commentBar.inputTextView.resignFirstResponder()
+    }
+    
+ 
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            let guest = invitations[indexPath.row - 1]
+            guest.deleteInBackground()
+            self.invitations.remove(at: indexPath.row - 1)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
+            tableView.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
