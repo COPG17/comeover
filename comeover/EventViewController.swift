@@ -53,6 +53,7 @@ class EventViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
+        picker.modalPresentationStyle = .fullScreen
         picker.delegate = self
         picker.allowsEditing = true
         
@@ -60,6 +61,7 @@ class EventViewController: UIViewController, UIImagePickerControllerDelegate, UI
             picker.sourceType = .photoLibrary
         }
         present(picker, animated: true, completion: nil)
+        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
